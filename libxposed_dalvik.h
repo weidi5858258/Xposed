@@ -14,7 +14,7 @@ struct XposedHookInfo {
     struct {
         Method originalMethod;
         // copy a few bytes more than defined for Method in AOSP
-        // to accomodate for (rare) extensions by the target ROM
+        // to accommodate for (rare) extensions by the target ROM
         int dummyForRomExtensions[4];
     } originalMethodStruct;
 
